@@ -1,0 +1,78 @@
+﻿
+body {
+    padding: 0;
+    margin: 40px 0 0 0;
+    background: #eef3f7;
+}
+
+nav img {
+    margin-right: 10px;
+}
+
+.navbar {
+    background: #0078d7;
+}
+
+.nav-link, .navbar-brand, .navbar-brand:hover {
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+    .nav-link:hover {
+        background: #f4f4f4;
+        color: #0078d7;
+    }
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background: #0078d7 !important;
+    color: white !important;
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.paragraf {
+    margin: 1em 0;
+    padding: 1em;
+    position: relative;
+
+    /*border: 1px solid red;*/
+}
+.paragrafIcon img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    padding: 0;
+    /*border: 1px solid red;*/
+}
+.paragrafHead {
+    color: #00539c;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+
+    /*border: 1px solid red;*/
+}
+.paragrafContent {
+    color: #333333;
+    font-size: 20px;
+    width: 100%;
+    line-height: 1.5;
+    text-indent: 20px;
+
+    /*border: 1px solid red;*/
+}
+.paragrafImages {
+    width: 100%;
+    /*border: 1px solid green;*/
+}

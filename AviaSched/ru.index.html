@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AviaSched</title>
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Content/index.css">
+
+    <script type="text/javascript" src="/Scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.fancybox.pack.js"></script>
+
+    <script type="text/javascript" src="/Scripts/main.js" defer></script>
+    <link rel="shortcut icon" href="/Content/img/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-md fixed-top">
+
+            <a class="navbar-brand" href="#" data-value="startPage"> <img class="Logo" src="/Content/img/Logo32x32.png">AviaSched</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-4">
+                    <li class="dropdown nav-item">
+                        <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Модули
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" data-value="scheduleTool" href="#" data-toggle="collapse" data-target=".navbar-collapse.in" style="color:#333333;">Schedule Tool</a></li>
+                            <li class="nav-item"><a class="nav-link" data-value="crewMember" href="#" data-toggle="collapse" data-target=".navbar-collapse.in" style="color:#333333;">Crew Planner</a></li>
+                            <li class="nav-item"><a class="nav-link" data-value="mntPlanner" href="#" data-toggle="collapse" data-target=".navbar-collapse.in" style="color:#333333;">MNT Planner</a></li>
+                            <li class="nav-item"><a class="nav-link" data-value="opsPlanner" href="#" data-toggle="collapse" data-target=".navbar-collapse.in" style="color:#333333;">OPS View</a></li>
+                            <li class="nav-item"><a class="nav-link" data-value="analiticLine" href="#" data-toggle="collapse" data-target=".navbar-collapse.in" style="color:#333333;">Analytic Line</a></li>
+                            <li class="nav-item"><a class="nav-link" data-value="otherModules" href="#" data-toggle="collapse" data-target=".navbar-collapse.in" style="color:#333333;">Прочие</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " data-value="team" href="#">Наша команда</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " data-value="contact" href="#">Контакты</a>
+                    </li>
+                    <li class="dropdown nav-item">
+                        <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="/Content/img/flag_russia.png" />
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" href="javascript:LanguageChange('en')" style="color:#333333;"><img src="/Content/img/flag_great_britain.png" />English</a></li>
+                            <li class="nav-item"><a class="nav-link" href="javascript:LanguageChange('ua')" style="color:#333333;"><img src="/Content/img/flag_ukraine.png" />Українська</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.in" style="color:#333333;"><img src="/Content/img/flag_russia.png" />Русский</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!-- header -->
+        <div class="paragraf" id="startPage">
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-3"><img src="/Content/img/background_home.png" width="100%" height="auto" /></div>
+                <div class="paragrafHead col-sm-8 col-md-8 col-lg-9">
+                    AviaSched
+                    <h2>
+                        Программа для управления авиакомпанией
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="paragrafContent col-12">
+                    <p>
+                        AviaSched - облачная гибкая система для планирования и управления деятельностью авиакомпании,
+                        отслеживания всех изменений расписания и экипажа и выполняет функцию главного источника различной
+                        информации в Вашей компании.
+                    </p>
+                    <p>
+                        AviaSched оптимально синхронизирует действия в <b>Schedule</b>, <b>Crew</b>, <b>OPS</b>, <b>Maintenance</b> и <b>Comm</b>
+                        для достижения максимальной эффективности и полного взаимодействия.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main modules section -->
+        <div class="paragraf" id="scheduleTool">
+            <div class="row">
+                <div class="paragrafIcon col-sm-3 col-md-2"><img src="/Content/img/ST_Icon.png" /></div>
+                <div class="paragrafHead col-sm-9 col-md-10">Schedule Tool</div>
+            </div>
+            <div class="row">
+                <div class="paragrafContent col-12">
+                    <p>
+                        AviaSched Schedule Tool – инструмент автоматизированного создания расписания рейсов авиакомпании,
+                        на основании которого осуществляется планирование технического обслуживания воздушного судна, экипажей, расходов на выполнение рейсов.
+                    </p>
+                    <p>
+                        AviaSched Schedule Tool позволяет:
+                    </p>
+                    <ul class="scPerformance">
+                        <li>создавать сетку рейсов заданной периодичности;</li>
+                        <li>вносить исключения на протяжении периода;</li>
+                        <li>выполнять расчет статистики (FH, FC) для планирования технического обслуживания воздушного судна, количества экипажей и т.п;</li>
+                        <li>на основании стоимости и потребного количества топлива – определения расходов на заправку воздушного судна.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="paragrafImages row">
+            <div class="col-12">
+                <img src="/Content/img/scheduleTool.png" />
+            </div>
+        </div>
+
+        <div class="paragraf" id="crewMember">
+            <div class="row">
+                <div class="paragrafIcon col-sm-3 col-md-2"><img src="/Content/img/Crew_Icon.png" /></div>
+                <div class="paragrafHead col-sm-9 col-md-10">Crew Planner</div>
+            </div>
+            <div class="row">
+                <div class="paragrafContent col-12">
+                    <p>
+                        AviaSched Crew Planner – комплексный инструмент администрирования летного состава авиакомпании.
+                    </p>
+                    <p>
+                        AviaSched Crew Planner позволяет выполнять:
+                        <ul>
+                            <li>планирование месячной активности летного состава;</li>
+                            <li>назначение и контроль наличия летного состава на рейсах;</li>
+                            <li>формирование пирингов;</li>
+                            <li>контроль ограничений рабочего времени летного состава;</li>
+                            <li>гибкое планирования профиля члена экипажа;</li>
+                            <li>контроль наличия и валидности документов летного состава.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="paragrafImages row">
+            <div class="col-12">
+                <img src="/Content/img/CrewPanel.png" width="100%" />
+            </div>
+        </div>
+
+        <div class="paragraf" id="mntPlanner">
+            <div class="row">
+                <div class="paragrafIcon col-sm-3 col-md-2"><img src="/Content/img/MNT_Icon.png" /></div>
+                <div class="paragrafHead col-sm-9 col-md-10">MNT Planner</div>
+            </div>
+            <div class="row">
+                <div class="paragrafContent col-12">
+                    <p>
+                        AviaSched MNT Planner – модуль планирования и управления поддержания летной годности воздушных суден авиакомпании
+                    </p>
+                    <p>
+                        AviaSched MNT Planner позволяет:
+                        <ul>
+                            <li>создавать гибкий график форм технического обслуживания воздушных суден;</li>
+                            <li>планировать визиты на техническое обслуживание, согласно установленного профиля воздушного судна;</li>
+                            <li>контролировать остаток до следующих форм технического обслуживания;</li>
+                            <li>контролировать открытие, срок действия и ограничения DMI MEL.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="paragrafImages row">
+            <div class="col-12">
+                <img src="/Content/img/MNTPlanner.jpg" width="100%" />
+            </div>
+        </div>
+
+        <div class="paragraf" id="opsPlanner">
+            <div class="row">
+                <div class="paragrafIcon col-sm-3 col-md-2"><img src="/Content/img/OPS_Icon.png" /></div>
+                <div class="paragrafHead col-sm-9 col-md-10">OPS View</div>
+            </div>
+            <div class="row">
+                <div class="paragrafContent col-12">
+                    <p>
+                        AviaSched OPS View – модуль контроля текущей производственной деятельности авиакомпании и ее подразделений.
+                    </p>
+                    <p>
+                        AviaSched OPS View позволяет:
+                        <ul>
+                            <li>визуально отображать движение рейсов авиакомпании на временной линии;</li>
+                            <li>прогнозировать, контролировать и устранять сбои в оперативном расписании авиакомпании;</li>
+                            <li>выполнять информирование об оперативных изменениях в расписании.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="paragrafImages row">
+            <div class="col-12">
+                <img src="/Content/img/OPSView.jpg" width="100%" />
+            </div>
+        </div>
+
+        <div class="paragraf" id="analiticLine">
+            <div class="row">
+                <div class="paragrafIcon col-sm-3 col-md-2"><img src="/Content/img/AL_Icon.png" /></div>
+                <div class="paragrafHead col-sm-9 col-md-10">Analytic Line</div>
+            </div>
+            <div class="row">
+                <div class="paragrafContent col-12">
+                    <p>
+                        AviaSched Analytic Line – инструмент создания отчетов по направлениям производственной деятельности и аналитического учета.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="paragrafImages row">
+            <div class="col-12">
+                <img src="/Content/img/AnaliticCrewLoadPeriodsChar.png" width="100%" />
+            </div>
+        </div>
+        <div class="paragrafImages row">
+            <div class="col-12">
+                <img src="/Content/img/OpsReport.png" width="100%" />
+            </div>
+        </div>
+
+        <div class="paragraf" id="otherModules">
+            <div class="row">
+                <div class="paragrafIcon col-sm-3 col-md-2"><img src="/Content/img/Other_Icon.png" /></div>
+                <div class="paragrafHead col-sm-9 col-md-10">Другие модули</div>
+            </div>
+            <div class="row">
+                <div class="paragrafContent col-12">
+                    <p>
+                        eLib  - облачное средство хранения документации авиакомпании
+                    </p>
+                    <p>
+                        Notifications – система оперативного оповещения персонала и других заинтересованных лиц.
+                    </p>
+                    <p>
+                        Directives – система для создания и контроля указаний.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="paragraf" id="team">
+            <div class="row">
+                <div class="paragrafIcon col-sm-3 col-md-2"><img src="/Content/img/Team_Icon.png" /></div>
+                <div class="paragrafHead col-sm-9 col-md-10">Наша команда</div>
+            </div>
+            <div class="row">
+                <div class="paragrafContent col-12">
+                    <p>
+                        AviaSched – результат работы команды профессионалов в области авиации и IT-технологий.
+                        В нашей команде собраны специалисты, которые сделали для Вашей компании комплекс с оптимальным сплавом функциональности, удобства и ценового соотношения.
+                        Архитектор проекта и постановщики задачи – реально работающие в авиакомпаниях люди, которые имеют высокий профессионализм.
+                        IT - специалисты, исполнители задачи, имеют большой опыт работы в международных проектах по созданию программных продуктов.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="paragraf" id="contact">
+            <div class="row">
+                <div class="paragrafIcon col-sm-3 col-md-2"><img src="/Content/img/Contact_Icon.png" /></div>
+                <div class="paragrafHead col-sm-9 col-md-10">Наши контакты</div>
+            </div>
+            <div class="row">
+                <div class="paragrafContent col-12">
+
+                    Тел: +38 095 575 5510, +38 097 806 4241, +38 066 636 7072<br />
+                    Для переписки: <a href="mailto:ovetrov1403@gmail.com">ovetrov1403@gmail.com</a><br />
+                    Служба поддержки: <a href="mailto:support@aviasched.com">support@aviasched.com</a><br />
+                    <br />
+                    ул. Броненосца "Потемкин", д.3<br />
+                    г. Запорожье<br />
+                    69040, Украина
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
